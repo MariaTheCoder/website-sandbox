@@ -40,18 +40,35 @@ h2 {
 
 .article {
   list-style: none;
-  border: 1px dotted black;
   padding: 0.35em;
 }
 
 .article:not(:last-child) {
-  margin-bottom: 1.75em;
+  margin-bottom: 1.25em;
+  border-bottom: 1px dotted black;
+}
+
+.card {
+  width: fit-content;
+  padding: 1em;
+  margin: 1em auto;
+  border: 1px dotted black;
+}
+
+.card > * {
+  text-align: center;
+}
+
+.card > *:not(:last-child) {
+  margin-bottom: 0.8em;
 }
 
 .profile-pic {
+  display: block;
   width: 100px;
   border-radius: 50%;
   border: 0.4em solid green;
+  margin: auto;
 }
 
 .icon {
