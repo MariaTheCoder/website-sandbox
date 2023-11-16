@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  width: clamp(16em, 80vw, 60em);
+  width: clamp(16em, 85vw, 60em);
   margin: auto;
 }
 
@@ -28,4 +28,14 @@ body {
 .dynamic-content {
   padding: 2em 0;
   background-color: aquamarine;
+}
+
+.article {
+  list-style: none;
+  border: 1px dotted black;
+  padding: 0.35em;
+}
+
+.article:not(:last-child) {
+  margin-bottom: 1.75em;
 }
