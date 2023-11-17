@@ -12,6 +12,9 @@
   --primary-clr-darkmode: hsl(91, 27%, 37%);
   --secondary-clr-darkmode: hsl(180, 29%, 11%);
   --accent-clr-darkmode: hsl(270, 27%, 51%);
+
+  --small-default-border-radius: 0.25em;
+  --default-padding: 0.8rem;
 }
 
 body {
@@ -26,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  padding: 1.2em 0;
+  padding: var(--default-padding) 0;
 }
 
 .navigation-bar > a {
@@ -36,8 +39,9 @@ body {
 }
 
 .dynamic-content {
-  padding: 1em 0;
-  background-color: var(--primary-clr-darkmode);
+  padding: var(--default-padding);
+  background-color: var(--secondary-clr-darkmode);
+  border-radius: var(--small-default-border-radius);
 }
 
 h1 {
@@ -48,9 +52,17 @@ h2 {
   margin: 0.25em 0;
 }
 
+h1,
+h2,
+p,
+span,
+li {
+  color: var(--text-clr-darkmode);
+}
+
 .article {
   list-style: none;
-  padding: 0.25em;
+  padding: var(--default-padding);
 }
 
 .article:not(:last-child) {
@@ -58,6 +70,7 @@ h2 {
 }
 
 .category {
+  color: var(--accent-clr-darkmode);
   font-weight: 600;
 }
 
@@ -70,17 +83,27 @@ h2 {
   font-style: italic;
 }
 
+.header {
+  color: var(--primary-clr-darkmode);
+}
+
 .card {
-  background-color: var(--text-clr-darkmode);
+  background-color: var(--primary-clr-darkmode);
   width: fit-content;
-  padding: 1em;
-  margin: 1em auto;
+  padding: var(--default-padding);
+  margin: var(--default-padding) auto;
+  border-radius: var(--small-default-border-radius);
 
   display: flex;
   flex-direction: column;
   gap: 0.8em;
   justify-content: center;
   text-align: center;
+}
+
+.job-title {
+  color: var(--background-clr-darkmode);
+  min-width: 20ch;
 }
 
 .profile-pic {
@@ -109,6 +132,7 @@ h2 {
 .titles {
   font-weight: 600;
   font-size: 1.1em;
+  color: var(--accent-clr-darkmode);
 }
 
 .intro-projects {
@@ -134,18 +158,21 @@ h2 {
   align-items: center;
 }
 
+.rate {
+  color: var(--accent-clr-darkmode);
+}
+
 .link-to-contact-me {
   display: block;
   width: fit-content;
   text-decoration: none;
-  background-color: var(--text-clr-darkmode);
-  color: var(--accent-clr-darkmode);
+  background-color: var(--primary-clr-darkmode);
+  color: var(--background-clr-darkmode);
   font-weight: 600;
-  padding: 0.8em;
-  border-radius: 0.25em;
+  padding: var(--default-padding);
+  border-radius: var(--small-default-border-radius);
 }
 
 .link-to-contact-me:hover {
   background-color: hsl(0, 5%, 64%);
-  color: var(--secondary-clr-darkmode);
 }
