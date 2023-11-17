@@ -190,16 +190,25 @@ li {
 }
 
 .project-container {
-  list-style: inside;
+  list-style-type: disc;
 
   display: flex;
   flex-direction: column;
   gap: 0.4em;
 }
 
+.project {
+  margin: 0 0 var(--default-padding) var(--default-padding);
+}
+
 .project:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.project-name {
+  color: var(--accent-clr-darkmode);
+  text-decoration: none;
 }
 
 .rate-container {
