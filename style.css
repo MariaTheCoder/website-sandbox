@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   width: clamp(16em, 85vw, 60em);
   margin: auto;
+  font-family: sans-serif;
 }
 
 .navigation-bar {
@@ -82,4 +83,9 @@ a {
 
 .icon {
   width: 2em;
+}
+
+.titles {
+  font-weight: 600;
+  font-size: 1.1em;
 }
