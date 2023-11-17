@@ -141,7 +141,7 @@ li {
   background-color: var(--primary-clr-darkmode);
   width: fit-content;
   padding: var(--default-padding);
-  margin: var(--default-padding) auto;
+  margin: var(--default-padding) auto 0 auto;
   border-radius: var(--small-default-border-radius);
 
   display: flex;
