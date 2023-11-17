@@ -82,7 +82,7 @@ h2 {
   margin: auto;
 }
 
-a {
+.icons > a {
   color: transparent;
 }
 
@@ -117,4 +117,10 @@ a {
 .project:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
