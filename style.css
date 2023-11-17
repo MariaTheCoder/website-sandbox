@@ -75,6 +75,13 @@ li {
   border-bottom: 1px dotted var(--background-clr-darkmode);
 }
 
+.cat-date-container {
+  padding-bottom: calc(0.6 * var(--default-padding));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .category {
   color: var(--accent-clr-darkmode);
   font-weight: 600;
