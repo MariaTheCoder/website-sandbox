@@ -133,3 +133,19 @@ h2 {
   justify-content: flex-start;
   align-items: center;
 }
+
+.link-to-contact-me {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  background-color: var(--text-clr-darkmode);
+  color: var(--accent-clr-darkmode);
+  font-weight: 600;
+  padding: 0.8em;
+  border-radius: 0.25em;
+}
+
+.link-to-contact-me:hover {
+  background-color: hsl(0, 5%, 64%);
+  color: var(--secondary-clr-darkmode);
+}
