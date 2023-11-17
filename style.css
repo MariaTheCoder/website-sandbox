@@ -89,3 +89,20 @@ a {
   font-weight: 600;
   font-size: 1.1em;
 }
+
+.intro-projects {
+  margin-bottom: 0.8em;
+}
+
+.project-container {
+  list-style: inside;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.project:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
