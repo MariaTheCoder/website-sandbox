@@ -6,7 +6,16 @@
   padding: 0;
 }
 
+:root {
+  --text-clr-darkmode: hsl(0, 28%, 93%);
+  --background-clr-darkmode: hsl(0, 25%, 3%);
+  --primary-clr-darkmode: hsl(91, 27%, 37%);
+  --secondary-clr-darkmode: hsl(180, 29%, 11%);
+  --accent-clr-darkmode: hsl(270, 27%, 51%);
+}
+
 body {
+  background-color: var(--background-clr-darkmode);
   min-height: 100vh;
   width: clamp(16em, 85vw, 85em);
   margin: auto;
@@ -22,13 +31,13 @@ body {
 
 .navigation-bar > a {
   font-size: clamp(0.25em, 3vw, 1.2em);
-  color: brown;
+  color: var(--primary-clr-darkmode);
   text-decoration: none;
 }
 
 .dynamic-content {
   padding: 1em 0;
-  background-color: aquamarine;
+  background-color: var(--primary-clr-darkmode);
 }
 
 h1 {
@@ -41,7 +50,7 @@ h2 {
 
 .article {
   list-style: none;
-  padding: 1em 0;
+  padding: 0.25em;
 }
 
 .article:not(:last-child) {
@@ -62,10 +71,10 @@ h2 {
 }
 
 .card {
+  background-color: var(--text-clr-darkmode);
   width: fit-content;
   padding: 1em;
   margin: 1em auto;
-  border: 1px dotted black;
 
   display: flex;
   flex-direction: column;
@@ -78,7 +87,7 @@ h2 {
   display: block;
   width: 100px;
   border-radius: 50%;
-  border: 0.4em solid green;
+  border: 0.4em solid var(--accent-clr-darkmode);
   margin: auto;
 }
 
