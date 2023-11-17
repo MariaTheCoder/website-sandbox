@@ -41,11 +41,10 @@ h2 {
 
 .article {
   list-style: none;
-  padding: 0.35em;
+  padding: 1em 0;
 }
 
 .article:not(:last-child) {
-  margin-bottom: 1.25em;
   border-bottom: 1px dotted black;
 }
 
