@@ -20,7 +20,7 @@
 body {
   background-color: var(--background-clr-darkmode);
   min-height: 100vh;
-  width: clamp(16em, 85vw, 85em);
+  width: clamp(16.5em, 85vw, 85em);
   margin: auto;
   font-family: sans-serif;
 }
