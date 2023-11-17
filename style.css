@@ -48,6 +48,19 @@ h2 {
   border-bottom: 1px dotted black;
 }
 
+.category {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.7em;
+  text-align: end;
+}
+
+.draft {
+  font-style: italic;
+}
+
 .card {
   width: fit-content;
   padding: 1em;
