@@ -66,6 +66,38 @@ li {
   color: var(--text-clr-darkmode);
 }
 
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.8em;
+}
+
+.shortcut {
+  border-radius: var(--small-default-border-radius);
+  height: 15em;
+}
+
+#shortcut1 {
+  background-color: var(--accent-clr-darkmode);
+  width: calc(100% - 7em - 0.8em);
+}
+
+#shortcut2 {
+  background-color: var(--primary-clr-darkmode);
+  width: 7em;
+}
+
+#shortcut3 {
+  background-color: var(--secondary-clr-darkmode);
+  width: 6.5em;
+}
+
+#shortcut4 {
+  background-color: var(--text-clr-darkmode);
+  width: calc(100% - 6.5em - 0.8em);
+}
+
 .article {
   list-style: none;
   padding: var(--default-padding);
