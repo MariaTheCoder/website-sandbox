@@ -72,7 +72,7 @@ li {
 }
 
 .article:not(:last-child) {
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted var(--background-clr-darkmode);
 }
 
 .category {
